@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nur Al-Huda - Votre espace d'apprentissage</title>
+    <!-- Inclure Tailwind CSS pour un style rapide et moderne -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inclure la police Inter depuis Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        .page-section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .page-section.active {
+            display: block;
+            opacity: 1;
+        }
+        .nav-link.active {
+            color: #4f46e5;
+            font-weight: 600;
+        }
+        .contact-card {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- En-tête de la page -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Nom et slogan du site -->
+            <div class="flex flex-col items-start">
+                <h1 class="text-3xl font-extrabold text-gray-800">Nur Al-Huda</h1>
+                <p class="text-xs text-gray-500">Illuminez votre foi, cultivez votre savoir.</p>
+            </div>
+            <!-- Menu de navigation -->
+            <nav class="space-x-4 md:space-x-8">
+                <a href="#accueil" class="nav-link text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">Accueil</a>
+                <a href="#qui-suis-je" class="nav-link text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">Qui suis-je ?</a>
+                <a href="#cours" class="nav-link text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">Nos cours</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="flex-grow container mx-auto p-6 md:p-12">
+
+        <!-- Section Accueil -->
+        <section id="accueil" class="page-section">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-8">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Bienvenue chez Nur Al-Huda</h2>
+                <p class="text-gray-700 leading-relaxed text-lg mb-6 text-center">
+                    Votre espace pour apprendre le Coran, l'arabe et les sciences islamiques avec cœur et pédagogie. Des cours en ligne pensés pour les femmes et les enfants.
+                </p>
+                <div class="mt-8 grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg text-gray-600">
+                            Je suis ravie de vous accueillir dans un espace où la science islamique se transmet avec douceur et passion. Mon plus grand souhait ? Vous accompagner, pas à pas, sur le chemin du savoir, dans un environnement où chacune se sent écoutée, comprise et encouragée.
+                        </p>
+                        <p class="mt-4 text-lg text-gray-600">
+                            Grâce à nos cours en ligne, en petits groupes de 4 à 5 personnes, nous tissons des liens de confiance et de partage. Ensemble, nous créons une atmosphère d'étude à la fois sérieuse, interactive et profondément humaine. Prête à commencer ce beau voyage ? Faisons connaissance autour d'un cours d'essai.
+                        </p>
+                    </div>
+                    <div class="bg-emerald-50 rounded-xl p-6 shadow-sm">
+                        <h3 class="text-2xl font-bold text-center mb-4">Pourquoi nous choisir ?</h3>
+                        <ul class="space-y-4 text-gray-700 text-base">
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 text-2xl">🌱</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Une enseignante qui vous comprend</h4>
+                                    Mon parcours, enrichi par des formations d'excellence (Le Caire, IESH Paris) et une sensibilité littéraire, me permet de vous offrir un enseignement à la fois rigoureux et rempli d'empathie.
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 text-2xl">🤝</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Un cadre bienveillant et structuré</h4>
+                                    Ici, il n'y a pas de mauvaises questions. Ma pédagogie est conçue pour être claire, progressive et vous mettre en confiance, quel que soit votre niveau de départ.
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 text-2xl">👩‍🏫</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">La chaleur d'un petit groupe</h4>
+                                    Apprenez sans contraintes, où que vous soyez. Nos petits effectifs garantissent un suivi vraiment personnalisé et de beaux moments d'échange entre élèves.
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 text-2xl">✨</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">10 ans de passion à votre service</h4>
+                                    Mon expérience m'a appris à m'adapter aux besoins de chaque élève, enfant comme adulte, pour que l'apprentissage soit toujours un plaisir et une source d'épanouissement.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Qui suis-je ? -->
+        <section id="qui-suis-je" class="page-section">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-8">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Qui suis-je ?</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p class="text-lg">
+                        Ma plus grande joie est de transmettre la beauté des sciences islamiques, une passion qui m'anime depuis mon plus jeune âge, lorsque j'ai eu la grâce de mémoriser le Coran. Ce cheminement personnel est devenu une vocation : celle de partager la lumière du savoir avec vous.
+                    </p>
+                    <p class="text-lg">
+                        Pour vous offrir le meilleur accompagnement, j'ai eu l'honneur de me former auprès d'instituts prestigieux qui ont nourri mon esprit et mon cœur :
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-base">
+                        <li>Licence et Master en Sciences Islamiques (IFESI & IESH, Paris).</li>
+                        <li>Spécialisation en sciences coraniques à l'IESH de Château-Chinon et à l'Institut Addani.</li>
+                        <li>Maîtrise du tajwid (récitation), perfectionnée lors d'une formation au Caire.</li>
+                    </ul>
+                    <p class="text-lg mt-4">
+                        En parallèle, mon amour pour les mots, cultivé lors de mes études en Lettres Françaises, me permet aujourd'hui de bâtir des cours clairs, structurés et accessibles. Forte de mes expériences auprès d'écoles et d'associations, j'ai développé une approche douce et adaptable, pour que chaque femme et chaque enfant puisse s'épanouir.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Nos cours -->
+        <section id="cours" class="page-section">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-8">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Nos Cercles d'Étude en Ligne</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p class="text-lg">
+                        Rejoignez-nous pour des sessions interactives de 1h30, deux fois par semaine. Nos petits groupes sont conçus pour que chacune trouve sa place, puisse poser ses questions et progresser à son rythme.
+                    </p>
+                    <div class="mt-8 grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Cours de Coran : Une parole qui apaise le cœur</h3>
+                            <p class="text-base">
+                                Ensemble, faisons de chaque verset une source de paix et de lumière dans votre quotidien. Que vous débutiez ou souhaitiez parfaire votre lien avec le Livre d'Allah, je suis là pour vous guider.
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 mt-4 text-base">
+                                <li><strong>Premiers pas avec l'alphabet :</strong> Apprenons à lire avec fluidité et confiance.</li>
+                                <li><strong>Embellir votre récitation :</strong> Travaillons ensemble la prononciation (makharij) pour une lecture juste et pure.</li>
+                                <li><strong>Mémorisation (Hifdh) accompagnée :</strong> Des méthodes douces et un suivi régulier pour ancrer la Parole d'Allah dans votre cœur.</li>
+                                <li><strong>Les règles de Tajwid :</strong> Explorons la science de la récitation, avec théorie et pratique, pour une lecture parfaite.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Éducation Islamique : Grandir avec sa foi</h3>
+                            <p class="text-base">
+                                Offrez à vos enfants (ou à vous-même !) les clés pour grandir avec une foi sereine et des valeurs solides.
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 mt-4 text-base">
+                                <li><strong>Pour les enfants (6-18 ans) :</strong> Nous explorons le Tawhid, le Fiqh (prière, ablutions), l'histoire inspirante du Prophète (ﷺ) et les belles manières (Adab) qui illuminent le quotidien.</li>
+                                <li><strong>Pour les sœurs adultes :</strong> Renforçons les bases de notre foi avec l'étude du Fiqh essentiel à notre pratique et l'approfondissement du Tawhid.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Contact -->
+        <section id="contact" class="page-section">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-8">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Contact</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Formulaire de contact -->
+                    <div class="bg-gray-100 rounded-xl p-6 shadow-sm">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Envoyez-nous un message</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="nom" class="block text-sm font-medium text-gray-700">Nom, Prénom</label>
+                                <input type="text" id="nom" name="nom" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Adresse e-mail</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                            </div>
+                            <div>
+                                <label for="telephone" class="block text-sm font-medium text-gray-700">Numéro de téléphone (facultatif)</label>
+                                <input type="tel" id="telephone" name="telephone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Votre message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105">
+                                Envoyer mon message
+                            </button>
+                        </form>
+                        <div id="form-message" class="mt-4 text-center text-sm font-semibold hidden"></div>
+                    </div>
+
+                    <!-- Infos de contact direct -->
+                    <div class="contact-card rounded-xl p-6 shadow-sm flex flex-col justify-center items-center text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Contact direct</h3>
+                        <p class="text-lg text-gray-700 mb-2"><strong>Par téléphone ou WhatsApp :</strong></p>
+                        <p class="text-2xl font-semibold text-indigo-600 mb-4">07 56808364</p>
+                        <p class="text-lg text-gray-700 mb-2"><strong>Par email :</strong></p>
+                        <p class="text-lg font-semibold text-indigo-600 break-all">sabrnurhuda@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-800 text-gray-400 py-6 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Nur Al-Huda. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Script pour la navigation et les onglets -->
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        const pageSections = document.querySelectorAll('.page-section');
+
+        // Fonction pour afficher une section et masquer les autres
+        const showSection = (id) => {
+            pageSections.forEach(section => {
+                section.classList.remove('active');
+            });
+            const activeSection = document.querySelector(id);
+            if (activeSection) {
+                activeSection.classList.add('active');
+            }
+            // Met à jour la classe 'active' pour les liens de navigation
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === id) {
+                    link.classList.add('active');
+                }
+            });
+        };
+
+        // Gère le clic sur les liens de navigation
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                showSection(targetId);
+            });
+        });
+
+        // Gère le chargement initial de la page en fonction du hachage de l'URL
+        window.addEventListener('load', () => {
+            const initialHash = window.location.hash || '#accueil';
+            showSection(initialHash);
+        });
+
+        // Gère la soumission du formulaire de contact
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simule une soumission réussie
+            formMessage.textContent = 'Merci pour votre message ! Il a été envoyé avec succès.';
+            formMessage.classList.remove('hidden', 'text-red-500');
+            formMessage.classList.add('text-green-500');
+            contactForm.reset();
+        });
+    </script>
+
+</body>
+</html>
